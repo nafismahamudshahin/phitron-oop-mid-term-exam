@@ -11,3 +11,14 @@ class Book:
         self.__author = author
         self.__availability = True
         Library.entry_book(self)
+    
+    def borrow_book(self):
+        if self.__availability:
+            self.__availability = False
+        else: print("This book already borrowing")
+
+    
+Book(101,"computer office application","Lutfor Rahaman") 
+Book(102,"computer office application","Lutfor Rahaman") 
+Book(103,"computer office application","Lutfor Rahaman") 
+        
