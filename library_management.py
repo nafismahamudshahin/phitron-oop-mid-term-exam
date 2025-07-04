@@ -28,12 +28,12 @@ class Book:
     
     def borrow_book(self):
         if self.__availability: self.__availability = False
-        else: print("This book already borrowing")
+        else: print("\nThis book already borrowing")
         
     def return_book(self):
         if not self.__availability:
             self.__availability = True
-        else: print("this book not available in your home Right now this book inside my library.")
+        else: print("\nThis book has not been borrowed.")
     
     def view_book_info(self):
         
@@ -42,11 +42,11 @@ class Book:
     def get_book_id(self):
         return self.__book_id
     
-Book(101,"OOP","Jankar Mahbub") 
+Book(101,"OOP with python","Jhankar Mahbub") 
 Book(102,"C++","Rahat khan Pathan") 
 Book(103,"Competitive Programming","Rifat")
 
-# menu bar:
+# menu system:
 while True:
     print("\n_______ Welcome to the Library ______")
     print("1. View All Books")
